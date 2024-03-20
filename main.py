@@ -38,17 +38,15 @@ def get_word_count(text):
         counter += 1
     return counter
 
-
-# This is the solution from boot.dev
 def get_chars_dict(text):
-    chars = {}
-    for c in text:
-        lowered = c.lower()
-        if lowered in chars:
-            chars[lowered] += 1
+    character_list = {}
+    for character in text:
+        lowered = character.lower()
+        if lowered in character_list:
+            character_list[lowered] += 1
         else:
-            chars[lowered] = 1
-    return chars
+            character_list[lowered] = 1
+    return character_list
     
 
 main()
